@@ -10,7 +10,7 @@ body{
 .pai{
     display: grid;
     grid-template-columns: 1fr 0.5fr 6fr 1fr;
-    grid-template-rows: 1fr 0.75fr 1fr 1fr 15fr;
+    grid-template-rows: 1fr 0.75fr 1fr 1fr 20fr;
 }
 #logo{
     display: flex;
@@ -69,7 +69,7 @@ body{
     margin-top: 5px;    
     margin-right: 10px;
 }#mn1texto2{
-    margin-right: 5px;
+    margin-left: 25px;
     align-self: center;
 }#menu1 a {
     height: 20px;
@@ -89,7 +89,10 @@ body{
     margin-left: 25px;
     margin-right: 10px;
 }#conteudo img{
-    margin: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}#legenda{
+    font-size: small;
 }
 
 #teste{
