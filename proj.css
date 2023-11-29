@@ -2,6 +2,7 @@
     margin: 0.25px;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body{
     background-color: aliceblue;
@@ -121,5 +122,5 @@ body{
 #divisao{
     border: 1px solid black;
     align-self: flex-start;
-    height: 66px;
+    height: 100%;
 }
