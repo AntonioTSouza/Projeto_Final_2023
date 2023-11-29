@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj.css">
+    <link rel="icon" href="imgs/logo.png">
+    <title>Guia de "Lua" (Projeto Final)</title>
+</head>
+<body>
+    <div class="pai">
+        <div id="logo">
+                <img src="imgs/if.png" alt="">
+                <a href="https://bri.ifsp.edu.br" id="link"><img id="ifsp" src="imgs/IFSP__.png" alt="" width="150" height="50"></a>
+        </div>
+        <div id="banner">
+            <img src="imgs/meia_lua.png" id="lua" alt="" width=80px height="80px">
+            <p id="bntexto">Um guia básico para a linguagem de Programação  "Lua"</p>
+            <br>
+            <img src="imgs/Lua.png" id="lua"alt="Lua, uma linguagem de programação brasileira" width="80px" height="80px">
+        </div>
+        <div id="login">
+            LOGIN (*FAKE*)
+            <br><br>
+             Email:<input type="email" placeholder="digite um email" size="20">
+             <br>
+             Senha<input type="password" placeholder="digite a senha" size="20" minlength="8" required>
+             <input type="button" name="esqueci" id="" value="esqueci a senha">
+             <input type="button" name="entrar" id="" value="entrar">
+        </div>
+        <div id="menu1">
+            <p id="mn1texto">Antônio Toro Souza<br>
+                Criada em: 1 de Novembro de 2023 <br>
+                Eu não sei se eu consigo terminar ou continuar fazendo ._. 
+            </p>
+            <p id="divisao"></p>
+            <p id="mn1texto2">AVISO: Esse site foi feito para COMPUTADORES 1600x900. <br> Se você estiver em um celular, pode causar problemas no layout do site</p>
+        </div>
+        <div id="menu2"></div>
+        <div id="conteudo">
+            <h1 id="conteudo1">SOBRE A LINGUAGEM</h1>
+            <br>
+            <p>
+                ㅤㅤㅤ Lua é uma linguagem de programação leve, poderosa e eficiente, projetada para ser incorporada em diversas aplicações. Ela foi desenvolvida no Brasil por uma equipe liderada por Roberto Ierusalimschy, Luiz Henrique de Figueiredo e Waldemar Celes no PUC-rio em 1993, Lua tem ganhado destaque por sua simplicidade, flexibilidade e desempenho.
+                Com uma sintaxe elegante e fácil de aprender, Lua é frequentemente escolhida para tarefas que exigem eficiência e baixo consumo de recursos, como jogos, sistemas embarcados e automação. Sua versatilidade é evidente na capacidade de se adaptar a diferentes paradigmas de programação, incluindo programação procedural, orientada a objetos e funcional. 
+                O projeto inicialmente focou na necessidade de uma linguagem de script leve e eficiente para lidar com a complexidade de sistemas gráficos. A primeira aplicação prática da Lua foi no desenvolvimento de um software chamado "Tecgraf PUC-Rio" para visualização e análise de dados técnicos e científicos. 
+                Os criadores buscavam uma linguagem que fosse fácil de incorporar em outros sistemas, que tivesse uma sintaxe simples e fosse eficiente em termos de desempenho.
+            </p>
+            <br><br><br>
+            <h1>VARIÁVEIS</h1>
+            <br>
+            <p>
+                ㅤㅤㅤAs variáveis são elementos fundamentais para armazenar e manipular dados. A linguagem é dinamicamente tipada, ou seja, você não precisa determinar o tipo de uma variável ao declará-la. Por exemplo, você pode simplesmente atribuir um valor a um nome de variável, e o programa entenderá automaticamente o tipo. Se não atribuir uma variável do tipo <i><b>local</b></i>, ela automaticamente será do tipo <i><b>global</b></i>. 
+               A variável do tipo <i><b>Local</b></i> é normalmente utilizado para evitar conflitos e manter a organização do código. A linguagem possui 4 diferentes tipos de variável <i><b>local</b></i>, sendo elas <i><b>bool</b></i>, <i><b>string</b></i>, <i><b>número</b></i> e <i><b>table</b></i>. <br><br>
+               Para imprimir uma sintaxe básica dizendo "Hello World!" usando a variável do tipo local (Alguns programas esse comando já vem com o arquivo), basta digitar:
+            </p>
+            <!--O comando é parecido em python, sendo declarado assim: print("Hello World!")-->
+            <img src="imgs/ola_mundo.png" alt="'Hello World!'" id="imagem1">
+            <p id="legenda">Não é necessário o uso de ponto-vírgula no final de cada linha do programa</p>
+            
+            <br><br><br>
+            <h2 id="conteudo2">VARIÁVEL DE TIPO BOOLEANO (BOOL)</h2>
+            <br>
+            <p>
+                ㅤㅤㅤAs variáveis booleanas em Lua são fundamentais para criar lógica condicional em programas, permitindo que eles se adaptem dinamicamente a diferentes situações com base em avaliações lógicas.
+                as variáveis do tipo booleano desempenham um papel crucial na tomada de decisões e controle de fluxo em programas. Uma variável booleana pode assumir um de dois valores: <b>true</b> ou <b>false</b>, representando estados lógicos verdadeiros ou falsos, respectivamente.
+
+                A utilização de variáveis booleanas é especialmente evidente em estruturas de condição, como as declarações <i><b>if</b></i>, <i><b>else</b></i> e <i><b>elseif</b></i>. Essas estruturas permitem que o programa execute diferentes blocos de código com base na avaliação de expressões booleanas. Por exemplo, ao verificar se está chovendo antes de sair de casa, uma variável <i><b>bool</b>eana</i> pode indicar se a condição é verdadeira. 
+                Sobre as estruturas de condição e repetição, TODAS elas devem ter <i><b>end</b></i> no final do <i><b>if, else, e elseif</b></i>. <br><br> Um exemplo de como usar a variável <i><b>bool</b></i> num comando <i><b>if</b></i>, está presente na imagem abaixo, no qual está declarando a variável <b>local</b> do tipo <i><b>bool</b></i> com o nome "esta_chovendo" sendo verdadeiro. No <b>if</b>, está dizendo que, se "esta_chovendo" for verdadeiro 
+                (não precisa colocar <i>true</i> do lado do nome da variável), o programa imprime um texto dizendo "Leve um guarda-chuva!", senão (<i><b>else</b></i>), se for falsa (<i><b>false</b></i>), imprime uma outra mensagem dizendo "O tempo está bom!":
+            </p> 
+            <img src="imgs/Booleano.png" alt="Booleano">
+            <p id="legenda">Fonte: ChatGPT</p>
+
+            <br><br><br>
+            <h2 id="conteudo3">VARIÁVEL DE TIPO NÚMERO</h2>
+            <br>
+            <p>
+                ㅤㅤㅤVariáveis do tipo número são empregadas para representar valores numéricos, abrangendo inteiros e números de tipo <i><b>float</b></i> (número com casas decimais). Essas variáveis desempenham um papel essencial em operações matemáticas, controle de fluxo e armazenamento de informações quantitativas.
+                Essas variáveis podem ser utilizadas em operações matemáticas padrão, como adição, subtração, multiplicação e divisão, facilitando o processamento de valores numéricos.
+                Além disso, as variáveis número são frequentemente incorporadas em expressões lógicas e estruturas de controle de fluxo, como em declarações <i><b>if</b></i> e em loops <i><b>for</b></i> e <i><b>while</b></i>.
+            </p>
+        </div>
+        <div id="teste">
+            <p id="mn1texto2">Redes Sociais</p> 
+            <a href="https://facebook.com"><img src="imgs/facebook.png" alt="Facebook" width="30px" height="30px" id="social" usemap="#circulo"></a> <br>
+            <a href="https://instagram.com"><img src="imgs/instagram.png" alt="Instagram" width="30px" height="30px" id="social2"></a>
+            <a href="https://twitter.com"><img src="imgs/twitter.png" alt="Twitter" width="30px" height="30px"></a>
+            <a href="https://youtube.com"><img src="imgs/youtube.png" alt="Youtube" width="30px" height="30px"></a>
+        </div>
+        <div id="menu3">
+            <h1>Tópicos: <br></h1>
+            <h3><br>1- Introdução</h3>
+            <a href="#conteudo1"><li>Sobre a Linguagem</li></a>
+            <br>
+            <h3>2- Variáveis</h3>
+            <a href="#conteudo2"><li>Bool</li></a>
+            <a href="#conteudo3"><li>Numero</li></a>
+            <a href="#"><li>String</li></a>
+            <a href="#"><li>Table</li></a>
+                
+        </div>
+        <div id="menu4"></div>
+    </div>
+</body>
+</html>
