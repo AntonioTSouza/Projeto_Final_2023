@@ -88,6 +88,8 @@ body{
 }#conteudo p{
     margin-left: 25px;
     margin-right: 10px;
+}#conteudo img{
+    margin: 20px;
 }
 
 #teste{
