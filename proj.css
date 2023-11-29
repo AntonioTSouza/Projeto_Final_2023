@@ -34,8 +34,7 @@ body{
     border-top-right-radius: 10%;
     border-left: 5px solid rgba(185, 173, 230, 0.555);
     border-bottom: 1px dotted black;
-}
-#bntexto{
+}#bntexto{
     align-self: center;
     font-size: 45px;
     font-family: Georgia, Arial, Times, serif;
