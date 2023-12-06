@@ -35,7 +35,7 @@
                 Eu não sei se eu consigo terminar ou continuar fazendo ._. 
             </p>
             <p id="divisao"></p>
-            <p id="mn1texto2">AVISO: Esse site foi feito para COMPUTADORES 1600x900. <br> Se você estiver em um celular, pode causar problemas no layout do site</p>
+            <p id="mn1texto2">AVISO: Esse site foi feito para COMPUTADORES 1600x900. <br> Se você estiver em um celular, pode causar problemas no layout do site<br> <b>Esse site falará do BÁSICO da linguagem de programação com o nome "Lua"</b></p>
         </div>
         <div id="menu2"></div>
         <div id="conteudo">
@@ -52,7 +52,7 @@
             <br>
             <p>
                 ㅤㅤㅤAs variáveis são elementos fundamentais para armazenar e manipular dados. A linguagem é dinamicamente tipada, ou seja, você não precisa determinar o tipo de uma variável ao declará-la. Por exemplo, você pode simplesmente atribuir um valor a um nome de variável, e o programa entenderá automaticamente o tipo. Se não atribuir uma variável do tipo <i><b>local</b></i>, ela automaticamente será do tipo <i><b>global</b></i>. 
-               A variável do tipo <i><b>Local</b></i> é normalmente utilizado para evitar conflitos e manter a organização do código. A linguagem possui 4 diferentes tipos de variável <i><b>local</b></i>, sendo elas <i><b>bool</b></i>, <i><b>string</b></i>, <i><b>número</b></i> e <i><b>table</b></i>. <br><br>
+               A variável do tipo <i><b>Local</b></i> é normalmente utilizado para evitar conflitos e manter a organização do código. A linguagem possui 4 diferentes tipos de variável <i><b>local</b></i>, sendo elas <i><b>bool</b></i>, <i><b>string</b></i>, <i><b>número</b></i> e <i><b>table</b></i> (Foco do texto: String, number e bool). <br><br>
                Para imprimir uma sintaxe básica dizendo "Hello World!" usando a variável do tipo local (Alguns programas esse comando já vem com o arquivo), basta digitar:
             </p>
             <!--O comando é parecido em python, sendo declarado assim: print("Hello World!")-->
@@ -86,6 +86,31 @@
             <p id="legenda">Fonte: ChatGPT</p>
             <br><br><br>
             <h2 id="conteudo4">VARIÁVEL DE TIPO STRING</h2>
+            <p>
+                ㅤㅤㅤEm Lua, as variáveis do tipo <b>string</b> são empregadas para manipular e armazenar dados textuais. Essas strings podem ser declaradas utilizando aspas simples ou duplas, proporcionando flexibilidade ao programador. <br>
+                ㅤㅤㅤA concatenação, realizada pelo operador <b>.. </b>, permite unir strings, facilitando a construção de textos mais complexos.
+                Acesso a caracteres individuais em uma string é possível através da notação de colchetes, possibilitando manipulações diretas. Lua oferece uma variedade de funções embutidas para manipulação de strings, como <b><i>string.len()</i></b> para obter o comprimento e <b><i>string.upper()</i></b> para converter para maiúsculas.
+                A interpolação de strings em Lua simplifica a inserção de valores de variáveis no texto, facilitando a criação de strings dinâmicas e legíveis. O escape de caracteres, utilizando a barra invertida, é útil para inserir caracteres especiais, como quebras de linha.
+                Na comparação de strings em Lua, a sensibilidade a maiúsculas e minúsculas é padrão. Para comparações que não levam em conta o caso, funções como string.lower() ou string.upper() podem ser utilizadas. Essas características tornam as strings em Lua versáteis e poderosas para representar e manipular dados textuais em diversos contextos de programação. <br>
+                ㅤㅤㅤO código em Lua abaixo solicita ao usuário que insira seu nome com a variável <b><i>io.read()</i></b>, que faz a leitura do que você digitar no programa. Em seguida, cria e exibe uma mensagem de boas-vindas personalizada contendo o nome fornecido. Além disso, informa ao usuário que está utilizando o programa chamado "LuaConcat". O programa ilustra o uso de variáveis, 
+                entrada do usuário e concatenação de strings para proporcionar uma interação simples e personalizada.
+            </p>
+            <img src="imgs/String.png" alt="Código usando string">
+            <p id="legenda">Fonte: ChatGPT</p>
+            <br><br><br>
+            <h2 id="conteudo5">ESPECIFICADORES DE IO.READ()</h2>
+            <p>
+                ㅤㅤㅤNa linguagem de programação Lua, a função <i><b>io.read()</b></i> desempenha um papel central na interação com o usuário, permitindo a leitura de diversos tipos de variáveis. Além da leitura padrão de strings, Lua fornece especificadores de conversão, como o "*n", que simplificam a entrada e conversão de dados para outros tipos, como números inteiros e de ponto flutuante. 
+                Esses especificadores de conversão proporcionam uma abordagem flexível e eficaz para lidar com diferentes tipos de dados durante a interação do usuário, tornando o código mais robusto e adaptável a diversas situações. <br>
+                ㅤㅤㅤO especificador "*n" em Lua é utilizado como parte da função de leitura para indicar que a entrada do usuário deve ser interpretada como um número. Quando este especificador é utilizado, o Lua espera que o usuário forneça um valor numérico. O especificador "*a" é utilizado para ler a entrada completa, incluindo espaços em branco, até o final do arquivo. 
+                Essa opção é útil quando se deseja capturar uma entrada extensa, como um arquivo de texto, e processá-la como uma única string. 
+                Já o especificador "*l" é designado para a leitura de uma linha da entrada, excluindo o caractere de nova linha. Essa opção é ideal para situações em que se deseja capturar informações organizadas por linhas, como em entradas de texto ou arquivos CSV.       
+                Por fim, o especificador "*s" lê uma sequência de caracteres até o primeiro espaço em branco. Essa escolha é útil quando se quer capturar uma única palavra ou expressão sem espaços.
+            </p>
+            <img src="imgs/especificadores.png" alt="Exemplo grande de especificadores em Lua">
+            <br><br>
+            <h1 id="conclusão">Finalização</h1>
+            <p><p>Em conclusão, Lua se destaca como uma linguagem de programação elegante e versátil, proporcionando uma experiência de desenvolvimento envolvente. Se você deseja aprofundar seus conhecimentos ou descobrir mais sobre essa linguagem, não deixe de visitar o site oficial dos criadores em <a href="https://www.lua.org/portugues.html">https://www.lua.org/portugues.html</a>. Lá, você encontrará informações extras, documentação detalhada e a oportunidade de aprender mais com Lua, já que é um pouquinho parecido com Python. Continue explorando, aprendendo e construindo com Lua. Obrigado por me acompanhar neste conteúdo em Lua! Até a próxima! (caso tenha próxima).</p></p>
         </div>
         <div id="teste">
             <p id="mn1texto2">Redes Sociais</p> 
@@ -102,11 +127,18 @@
             <h3>2- Variáveis</h3>
             <a href="#conteudo2"><li>Bool</li></a>
             <a href="#conteudo3"><li>Numero</li></a>
-            <a href="#"><li>String</li></a>
-            <a href="#"><li>Table</li></a>
-                
+            <a href="#conteudo4"><li>String</li></a>
+            <br>
+            <h3>3- Leitura</h3>
+            <a href="#conteudo5"><li>Como ler um número?</li></a>
+            <br><br>
+            <h1><a href="#conclusão">Finalização</a></h1>
         </div>
         <div id="menu4"></div>
+        <div class="rodapé">
+            <p>Lua, 1993. Essa página tem o intuito de informar, não de copiar alguém.</p>
+            <p>Deu trabalho para fazer o site.</p>
+        </div>
     </div>
 </body>
 </html>
