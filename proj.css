@@ -10,7 +10,7 @@ body{
 .pai{
     display: grid;
     grid-template-columns: 1fr 0.5fr 6fr 1fr;
-    grid-template-rows: 1fr 0.75fr 1fr 1fr 20fr;
+    grid-template-rows: 1fr 0.75fr 1fr 1fr 36fr 1fr;
 }
 #logo{
     display: flex;
@@ -88,6 +88,7 @@ body{
 }#conteudo p{
     margin-left: 25px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }#conteudo img{
     margin-left: 20px;
     margin-top: 20px;
@@ -113,19 +114,34 @@ body{
     flex-direction: column;
     background: linear-gradient(180deg, aliceblue, rgba(170, 160, 230, 0.555), rgba(185, 173, 230, 0.555));
     border: 1px dotted black;
-    grid-row: 4/6;
+    grid-row: 4/7;
     border-bottom-left-radius: 45px;
 }#menu3 a{
     margin-left: 20px;
+}#menu3 h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}#menu3 li{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #menu4{
     background: linear-gradient(0deg, rgba(170, 160, 230, 0.555), beige);
     border: 1px dotted black;
-    border-bottom-right-radius: 45px;
 }
 
 #divisao{
     border: 1px solid black;
     align-self: flex-start;
     height: 100%;
+}
+
+.rodapé{
+    display: flex;
+    align-items: center;
+    grid-column: 2/5;
+    border: 1px solid black;
+    border-bottom-right-radius: 45px;
+}.rodapé p{
+    margin-right: 10px;
+    margin-left: 10px;
 }
